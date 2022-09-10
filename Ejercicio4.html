@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frase =prompt("Ingrese una frase: ");
+        let longitud = frase.length;
+        var contador = 0;
+        for( i=0; i < longitud; i++){
+            var car = frase.charAt(i);
+            if (car=="a"){
+                contador = contador+1;
+            }else{
+                contador = contador;
+            }
+        }
+        document.write("EL total de veces en las que aparece la letra a es: "+ contador);
+        console.log(car);
+        console.log(longitud);
+        console.log(contador);
+    </script>
+</body>
+</html>
