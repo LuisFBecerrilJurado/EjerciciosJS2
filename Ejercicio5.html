@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frase =prompt("Ingrese una frase: ");
+        let longitud = frase.length;
+        let vocales="";
+        for(i=0; i<longitud; i++){
+            var car = frase.charAt(i);
+            if(car=="a"||car=="e"||car=="i"||car=="o"||car=="u"){
+                vocales = vocales+car;
+            }else{
+                vocales = vocales;
+            }
+        }
+        document.write("Las vocales que aparecen en la frase son: "+ vocales);
+    </script>
+</body>
+</html>
