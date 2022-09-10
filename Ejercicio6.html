@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let frase =prompt("Ingrese una frase: ");
+        let longitud = frase.length;
+        let vocales=0;
+        let vocalA=0;
+        let vocalE=0;
+        let vocalI=0;
+        let vocalO=0;
+        let vocalU=0;
+        for(i=0; i<longitud; i++){
+            var car = frase.charAt(i);
+            if(car=="a"||car=="e"||car=="i"||car=="o"||car=="u"){
+                vocales = vocales+1;
+            }else{
+                vocales = vocales;
+            }
+            switch (car){                                // En caso de que el carater sea una vocal*/
+                case "a":                                   // Si es a
+                    vocalA = vocalA+1;                 // Al texto ya encriptado le suma la transformación por el valor "ai"
+                break;
+                case "e":                                   // Si es e
+                    vocalE = vocalE+1;              // Al texto ya encriptado le suma la transformación por el valor "enter"
+                break;
+                case "i":                                   // Si es i
+                    vocalI = vocalI+1;               // Al texto ya encriptado le suma la transformación por el valor "imes"
+                break;
+                case "o":                                   // Si es o
+                    vocalO = vocalO+1;               // Al texto ya encriptado le suma la transformación por el valor "ober"
+                break;
+                case "u":                                   // Si es u
+                    vocalU = vocalU+1;               // Al texto ya encriptado le suma la transformación por el valor "ufat"
+                break;
+                default:                                    // En caso de no ser variable            // Al texto ya encriptado le suma la letra correspondiente
+            }
+        }
+        document.write("El total de vocales en la frase son: \n"+ vocales + "<br>");
+        document.write("El total de vocal a en la frase son: \n"+ vocalA + "<br>");
+        document.write("El total de vocal e en la frase son: \n"+ vocalE + "<br>");
+        document.write("El total de vocal i en la frase son: \n"+ vocalI + "<br>");
+        document.write("El total de vocal o en la frase son: \n"+ vocalO + "<br>");
+        document.write("El total de vocal u en la frase son: \n"+ vocalU + "<br>");
+    </script>
+</body>
+</html>
